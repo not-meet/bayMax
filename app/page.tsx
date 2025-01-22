@@ -1,4 +1,4 @@
-import FileUpload from '@/components/FileUpload';
+import FileUpload from '@/components/FileUploader';
 import Image from 'next/image';
 
 export default function Home() {
