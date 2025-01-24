@@ -13,17 +13,13 @@ export default {
         foreground: "var(--foreground)",
       },
       keyframes: {
-        typewriter: {
-          '0%': { width: '0%' },
-          '100%': { width: '100%' },
-        },
-        blink: {
-          '0%, 100%': { borderColor: 'transparent' },
-          '50%': { borderColor: 'black' },
-        },
+        'gradient-x': {
+          '0%, 100%': { 'background-position': '0% 50%' },
+          '50%': { 'background-position': '100% 50%' }
+        }
       },
       animation: {
-        typewriter: 'typewriter 3s steps(40, end) 1, blink 0.5s step-end infinite',
+        'gradient-x': 'gradient-x 15s ease infinite'
       },
     },
   },

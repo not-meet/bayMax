@@ -5,7 +5,6 @@ export async function GET(request: NextRequest) {
   try {
     await dbConnect();
 
-    // Fetch the most recently added document
     const latestFile = await File.findOne()
       .sort({ uploadedAt: -1 }) // Sort by creation date in descending order
       .exec(); // Execute the query
@@ -17,10 +16,8 @@ export async function GET(request: NextRequest) {
       );
     }
 
-    // Create response with the latest PDF file
     const response = new NextResponse(latestFile.data);
 
-    // Set appropriate headers
     response.headers.set('Content-Type', latestFile.contentType);
     response.headers.set(
       'Content-Disposition',
