@@ -32,7 +32,8 @@ const FileUpload = () => {
   const { getRootProps, getInputProps, isDragActive } = useDropzone({
     onDrop,
     accept: {
-      'application/pdf': ['.pdf', '.jpg'],
+      'application/pdf': ['.pdf'],
+      'image/jpeg': ['.jpg'],
     },
     multiple: false
   });
