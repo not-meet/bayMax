@@ -7,7 +7,7 @@ export default function Home() {
       <h1 className="text-3xl text-black font-bold text-center mb-4">
         Let's examine your reports!
       </h1>
-      <Image src='/baymax.png' alt='baymax' height={250} width={250} />
+      {/* <Image src='/baymax.png' alt='baymax' height={250} width={250} /> */}
       <div className="w-full max-w-lg mt-10">
         <FileUpload />
       </div>
